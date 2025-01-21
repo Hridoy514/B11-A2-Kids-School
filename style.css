@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 /* font-family: "Quicksand", serif;
-  font-family: "Quicksand", serif; */
+  font-family: "Raleway", serif; */
 
 body {
   font-family: "Quicksand", serif;
@@ -15,6 +15,7 @@ body {
 .side-margin {
   margin: 0 100px;
 }
+
 /* navbar text color */
 .color-1 {
   color: #fea301;
@@ -45,6 +46,7 @@ nav > ul {
   align-items: center;
   justify-content: space-between;
 }
+
 nav {
   height: 100px;
   margin: 0 100px;
@@ -59,6 +61,7 @@ ul li a {
   text-decoration: none;
   font-weight: 500;
 }
+
 .orange-btn {
   background-color: #fea301;
   color: #ffffff;
@@ -109,6 +112,7 @@ ul li a {
 .hero-container .hero-img img {
   width: 100%;
 }
+
 /* 1st card section design */
 .curriculum-section h1 {
   font-size: 40px;
@@ -161,6 +165,7 @@ ul li a {
 #card-anchor3 {
   color: #5d58ef;
 }
+
 .card-achor-margin {
   margin-top: 30px;
   font-weight: bold;
@@ -202,6 +207,7 @@ ul li a {
   padding: 8px 13px;
   border-radius: 50%;
 }
+
 /* Marquee styles */
 marquee {
   margin-top: -30px;
@@ -217,6 +223,7 @@ marquee {
   border-bottom: 2px solid #fea301;
   box-shadow: 0px 0px 38px 7px rgba(0, 0, 0, 0.05);
 }
+
 /* story section design */
 .our-stories {
   text-align: center;
@@ -290,6 +297,7 @@ marquee {
   margin-bottom: 10px;
   margin-top: -20px;
 }
+
 #date-btn-main {
   position: absolute;
   left: 0;
@@ -423,6 +431,7 @@ footer {
     padding: 0 30px;
     border-bottom: 2px solid #fea301;
   }
+
   /* hero section responsive */
   .hero-container {
     margin-top: 25px;
@@ -436,6 +445,7 @@ footer {
   .hero-container .hero-text h1 {
     font-size: 35px;
   }
+
   /* curriculum section responsive */
   .curriculum-section {
     margin-top: 50px;
@@ -459,10 +469,12 @@ footer {
   #arrow-icon {
     display: none;
   }
+
   /* marquee responsive*/
   marquee {
     margin-top: 60px;
   }
+
   /* our story section responsive */
 
   .main-story {
@@ -478,6 +490,7 @@ footer {
     align-items: center;
     justify-content: center;
   }
+
   .story {
     height: 230px;
   }
@@ -497,11 +510,11 @@ footer {
     padding: 20px;
     font-size: 12px;
   }
-
   .view-all {
     margin-top: 20px;
     font-size: 8px;
   }
+
   #date-btn-1 {
     position: relative;
     top: -17px;
@@ -518,13 +531,15 @@ footer {
     position: relative;
     top: -17px;
   }
+  
   /* footer responsive */
   .footer {
     padding: 50px 0;
     height: auto;
     grid-template-columns: repeat(1, 1fr);
   }
-  .footer-logo, .about-container{
+  .footer-logo,
+  .about-container {
     flex-direction: column;
     align-items: start;
   }
