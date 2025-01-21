@@ -220,11 +220,20 @@ marquee {
 /* story section design */
 .our-stories {
   text-align: center;
+  background: linear-gradient(
+      0deg,
+      rgba(249, 224, 180, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    ),
+    url(./assets/bg.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-top: 50px;
 }
 
 .our-stories h2 {
+  margin-bottom: 100px;
   font-size: 40px;
-  margin-bottom: 50px;
 }
 
 .grid-container {
@@ -244,27 +253,27 @@ marquee {
 }
 
 .main-story {
-  grid-area: main-story;  
+  grid-area: main-story;
   position: relative;
 }
 
 .story1 {
-  grid-area: story1;  
+  grid-area: story1;
   position: relative;
 }
 
 .story2 {
-  grid-area: story2;  
+  grid-area: story2;
   position: relative;
 }
 
 .story3 {
-  grid-area: story3;  
+  grid-area: story3;
   position: relative;
 }
 
 .story4 {
-  grid-area: story4;  
+  grid-area: story4;
   position: relative;
 }
 
@@ -281,36 +290,36 @@ marquee {
   margin-bottom: 10px;
   margin-top: -20px;
 }
-#date-btn-main{
+#date-btn-main {
   position: absolute;
   left: 0;
   top: 57%;
   padding: 10px 15px;
-  background-color: #3CD8E8;
+  background-color: #3cd8e8;
 }
-#date-btn-1{
+#date-btn-1 {
   position: absolute;
   left: 0;
   top: 58%;
 }
-#date-btn-2{
+#date-btn-2 {
   position: absolute;
   left: 0;
   top: 58%;
-  background-color: #5D58F0;
+  background-color: #5d58f0;
 }
-#date-btn-3{
+#date-btn-3 {
   position: absolute;
   left: 0;
   top: 59%;
 }
-#date-btn-4{
+#date-btn-4 {
   position: absolute;
   left: 0;
   top: 59%;
 }
 
-.story img{
+.story img {
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -344,6 +353,58 @@ marquee {
   background: #05d4df;
 }
 
+/* footer section design */
+footer {
+  background-color: #01acfd;
+}
+.footer {
+  height: 400px;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  align-items: center;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+.footer-logo h1 {
+  font-size: 35px;
+  margin-top: 3px;
+  line-height: 32px;
+}
+.footer-logo img {
+  width: 12%;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.footer-logo p {
+  font-size: 15px;
+  font-weight: 400;
+}
+.about-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-school {
+  line-height: 40px;
+}
+.about-school h4 {
+  font-weight: 500;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.social {
+  margin-top: 5px;
+}
 
 /* small device responsive */
 @media screen and (max-width: 576px) {
@@ -404,58 +465,67 @@ marquee {
   }
   /* our story section responsive */
 
-  .main-story{
+  .main-story {
     display: none;
   }
   .grid-container {
-  grid-template-areas:
-    "story1 story2"
-    "story1 story2"
-    "story3 story4";
-  grid-template-columns:1fr 1fr;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-}
-.story{
-  height: auto;
-}
-.our-stories h2 {
-  font-size: 25px;
-  margin-bottom: 30px;
-}
-.story img{
-  width: 100%;
-  height: auto;
-}
-.story .date{
-  font-size: 8px;
-}
-.story h3{
-  margin-top: -20px;
-  padding: 20px;
-  font-size: 12px;
-}
+    grid-template-areas:
+      "story1 story2"
+      "story1 story2"
+      "story3 story4";
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .story {
+    height: auto;
+  }
+  .our-stories h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .story img {
+    width: 100%;
+    height: auto;
+  }
+  .story .date {
+    font-size: 8px;
+  }
+  .story h3 {
+    margin-top: -20px;
+    padding: 20px;
+    font-size: 12px;
+  }
 
-.view-all{
-  margin-top: 20px;
-  font-size: 8px;
-}
-#date-btn-1{
-  position: relative;
-  top: -17px;
-}
-#date-btn-2{
-  position: relative;
-  top: -17px;
-}
-#date-btn-3{
-  position: relative;
-  top: -17px;
-}
-#date-btn-4{
-  position: relative;
-  top: -17px;
-}
-
+  .view-all {
+    margin-top: 20px;
+    font-size: 8px;
+  }
+  #date-btn-1 {
+    position: relative;
+    top: -17px;
+  }
+  #date-btn-2 {
+    position: relative;
+    top: -17px;
+  }
+  #date-btn-3 {
+    position: relative;
+    top: -17px;
+  }
+  #date-btn-4 {
+    position: relative;
+    top: -17px;
+  }
+  /* footer responsive */
+  .footer {
+    padding: 50px 0;
+    height: auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-logo, .about-container{
+    flex-direction: column;
+    align-items: start;
+  }
 }
